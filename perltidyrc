@@ -12,6 +12,8 @@
 --nospace-for-semicolon
 --nowant-left-space="* /"
 --nowant-right-space="* /"
+--nospace-terminal-semicolon
+--trim-pod
 
 # Comment Controls
 --closing-side-comments
