@@ -2,7 +2,7 @@
 --standard-error-output
 
 # Basic Options
---maximum-line-length=80
+--maximum-line-length=140
 --indent-columns=4
 
 # Code Indentation Control
