@@ -3,7 +3,7 @@
 
 # Basic Options
 --maximum-line-length=140
---indent-columns=4
+--indent-columns=2
 
 # Code Indentation Control
 --line-up-parentheses
