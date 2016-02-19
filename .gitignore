@@ -17,6 +17,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+*.bak
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
