@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/withdrawn_interpretations.pl,v $
-# $Revision: 1.2 $
 
 use strict;
 use warnings;

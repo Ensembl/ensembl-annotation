@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/load_ccds_transcripts_using_api.pl,v $
-# $Revision: 1.25 $
 
 use warnings;
 use strict;

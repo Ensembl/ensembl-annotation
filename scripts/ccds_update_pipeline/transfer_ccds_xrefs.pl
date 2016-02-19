@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/transfer_ccds_xrefs.pl,v $
-# $Revision: 1.3 $
 
 =pod
 

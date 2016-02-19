@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/store_locationless.pl,v $
-# $Revision: 1.8 $
 
 # # #
 # Making a status_file:

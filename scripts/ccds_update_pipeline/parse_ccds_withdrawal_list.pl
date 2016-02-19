@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/parse_ccds_withdrawal_list.pl,v $
-# $Revision: 1.2 $
 
 use warnings;
 use strict;

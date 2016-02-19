@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/find_unique_exons.pl,v $
-# $Revision: 1.4 $
 
 # A script designed to find cases where Ensembl
 # has predicted a coding exons, but Havana

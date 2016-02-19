@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/fix_daf_paf_external_db_ids.pl,v $
-# $Revision: 1.2 $
 
 # This is a patching script and should not normally be needed
 

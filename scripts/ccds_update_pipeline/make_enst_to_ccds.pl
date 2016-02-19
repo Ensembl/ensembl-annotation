@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
 
-# $Source: /cvsroot/ensembl/ensembl-personal/genebuilders/ccds/scripts/make_enst_to_ccds.pl,v $
-# $Revision: 1.2 $
 
 use warnings;
 use strict;
