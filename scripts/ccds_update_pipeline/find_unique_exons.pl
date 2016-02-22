@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
 
-
 # A script designed to find cases where Ensembl
 # has predicted a coding exons, but Havana
 # has not predicted a coding exon.

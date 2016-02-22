@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
 
-
 # This is a patching script and should not normally be needed
 
 use warnings;
