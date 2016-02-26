@@ -4,8 +4,8 @@ perl:
   - "5.14"
 
 env:
-  - COVERALLS=true  DB=mysql
   - COVERALLS=false DB=mysql
+  - COVERALLS=true DB=mysql
 
 sudo: false
 
@@ -36,6 +36,7 @@ before_install:
 
 install:
     - cpanm -v --installdeps --with-recommends --notest --cpanfile ensembl/cpanfile .
+    - cpanm -n Devel::Cover::Report::Coveralls
     - export SAMTOOLS=$PWD/samtools-0.1.19
     - export PERL5LIB=$PWD/bioperl-live
     - cpanm -v --with-recommends --notest Bio::DB::Sam
