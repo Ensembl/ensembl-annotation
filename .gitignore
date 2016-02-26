@@ -36,3 +36,4 @@ MultiTestDB.conf
 *.frozen.conf
 bioperl*.zip
 /modules/t/CLEAN.t
+.tidyall.d/
