@@ -27,6 +27,8 @@ before_install:
     - tar -jxvf download 
     - cd samtools-0.1.19 && make CFLAGS="-g -O2 -fPIC"
     - cd ..
+    - cpanm --notest Perl::Tidy
+    - cpanm --notest Test::Code::TidyAll
 
 
 install:
