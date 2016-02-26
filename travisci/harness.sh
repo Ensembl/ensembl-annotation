@@ -8,9 +8,13 @@ export WORK_DIR=$PWD
 echo "Running test suite"
 echo "Using $PERL5LIB"
 
+echo "COVERALLS $COVERALLS"
+
 if [ "$COVERALLS" = 'true' ]; then
   export PERL5LIB=$PERL5LIB:$PWD/ensembl-test/modules
-  PERL5OPT='-MDevel::Cover=+ignore,bioperl,+ignore,ensembl-test' perl $PWD/ensembl-test/scripts/runtests.pl -verbose $PWD/modules/t $SKIP_TESTS
+  PERL5OPT='-MDevel::Cover=+ignore,bioperl,+ignore,ensembl-test' perl $PWD/ensembl-test/scripts/runtests.pl -verbose $PWD/t $SKIP_TESTS
+else
+  perl $PWD/ensembl-test/scripts/runtests.pl t $SKIP_TESTS
 fi
 
 rt=$?
