@@ -8,7 +8,7 @@ export WORK_DIR=$PWD
 echo "Running test suite"
 echo "Using $PERL5LIB"
 
-echo "COVERALLS $COVERALLS"
+echo "COVERALLS value=$COVERALLS"
 
 if [ "$COVERALLS" = 'true' ]; then
   export PERL5LIB=$PERL5LIB:$PWD/ensembl-test/modules

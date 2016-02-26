@@ -4,6 +4,8 @@ perl:
   - "5.14"
 
 env:
+  - COVERALLS=true  DB=mysql
+  - COVERALLS=false DB=mysql
 
 sudo: false
 
@@ -14,6 +16,7 @@ addons:
 
 before_install:
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl.git
+    - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-test.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-killlist.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-compara.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-funcgen.git
