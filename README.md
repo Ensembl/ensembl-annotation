@@ -3,5 +3,6 @@
 ## Running perltidy
 Before commiting to this repository please run the following has been run to ensure the Perl source files are formatted correctly.
 ```
-find . -name '*.p[l|m]' -exec perltidy -pro=/path/to/ensembl-annotation/perltidyrc  -b {} \;
+cd /path/to/ensembl-annotation/
+find . -name '*.p[l|m]' -exec perltidy -pro=perltidyrc  -b {} \;
 ```
