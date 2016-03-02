@@ -1,7 +1,10 @@
 language: "perl"
 
 perl:
+  - "5.22"
+  - "5.18"
   - "5.14"
+  - "5.10"
 
 env:
   - COVERALLS=false DB=mysql
@@ -26,8 +29,8 @@ before_install:
     - unzip bioperl-release-1-2-3.zip
     - git clone --branch bioperl-release-1-6-9 --depth 1 https://github.com/bioperl/bioperl-live.git
     - git clone --branch master --depth 1 https://github.com/bioperl/bioperl-run.git
-    - wget http://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download 
-    - tar -jxvf download 
+    - wget http://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download
+    - tar -jxvf download
     - cd samtools-0.1.19 && make CFLAGS="-g -O2 -fPIC"
     - cd ..
     - cpanm --notest Perl::Tidy
@@ -43,11 +46,23 @@ install:
     - cpanm -v --with-recommends --notest JSON
     - unset SAMTOOLS
     - unset PERL5LIB
- 
+
 script: "./travisci/harness.sh"
+
+# Get the matrix to only build coveralls support when on 5.10
+matrix:
+  exclude:
+    - perl: "5.10"
+      env: COVERALLS=false DB=mysql
+    - perl: "5.14"
+      env: COVERALLS=true  DB=mysql
+    - perl: "5.18"
+      env: COVERALLS=true  DB=mysql
+    - perl: "5.22"
+      env: COVERALLS=true  DB=mysql
+
 
 notifications:
   email:
     on_success: always
     on_failure: always
-
