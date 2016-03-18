@@ -1,0 +1,4 @@
+33	3	157870	158193	-1	potential protein location (hypothetical protein BTF1_31232 [Bacillus thuringiensis HD-789]) that overlaps RNA (tRNA-S); potential protein location (hypothetical protein BTF1_31232 [Bacillus thuringiensis HD-789]) that overlaps RNA (tRNA-W); potential ...	37	\N
+34	4	212311	212529	1	COG1132 ABC-type multidrug transport system, ATPase and permease components; putative deletion pseudogene	38	\N
+35	4	6267	6953	1	potential frameshift: common BLAST hit: gi|161598601|ref|YP_001573816.1| IS element transposase	37	\N
+36	11	5336890	5337706	1	potential frameshift: common BLAST hit: gi|218895386|ref|YP_002443797.1| proline dehydrogenase	37	\N

@@ -1,0 +1,96 @@
+3	\N	patch	patch_71_72_a.sql|schema_version
+4	\N	patch	patch_71_72_b.sql|associated_xref
+58	\N	patch	patch_72_73_a.sql|schema_version
+59	\N	patch	patch_72_73_b.sql|alt_allele_type
+60	\N	patch	patch_72_73_c.sql|add_object_type_marker
+62	\N	patch	patch_73_74_a.sql|schema_version
+63	\N	patch	patch_73_74_c.sql|remove_unconventional_transcript_association
+64	\N	patch	patch_73_74_d.sql|remove_qtl
+65	\N	patch	patch_73_74_e.sql|remove_canonical_annotation
+66	\N	patch	patch_73_74_f.sql|remove_pair_dna_align
+67	\N	patch	patch_73_74_g.sql|add_transcript_idx_tise
+68	\N	patch	patch_73_74_h.sql|alt_allele_unique_gene_idx
+69	\N	patch	patch_74_75_a.sql|schema_version
+70	\N	patch	patch_74_75_b.sql|transcript_source
+71	\N	patch	patch_74_75_c.sql|add_genome_statistics
+72	\N	patch	patch_74_75_d.sql|default_transcript_source
+73	\N	patch	patch_74_75_e.sql|unique_attrib_key
+74	\N	patch	patch_74_75_f.sql|longer_code
+75	\N	patch	patch_75_76_a.sql|schema_version
+76	\N	patch	patch_75_76_b.sql|allow_null_karyotype
+77	\N	patch	patch_75_76_c.sql|remove_alternative_splicing
+78	\N	patch	patch_76_77_a.sql|schema_version
+79	\N	patch	patch_77_78_a.sql|schema_version
+80	\N	patch	patch_77_78_b.sql|source_column_increase
+81	\N	patch	patch_77_78_c.sql|Change unmapped_reason_id from smallint to int
+82	\N	patch	patch_78_79_a.sql|schema_version
+83	\N	patch	patch_78_79_b.sql|bamcov support
+84	\N	patch	patch_79_80_a.sql|schema_version
+85	\N	patch	patch_79_80_b.sql|xref_dbprimary_acc_longer
+86	\N	patch	patch_79_80_c.sql|seq_region_synonym_longer
+87	\N	patch	patch_79_80_d.sql|genome_statistics_value_longer
+88	\N	patch	patch_80_81_a.sql|schema_version
+89	\N	patch	patch_81_82_a.sql|schema_version
+90	\N	patch	patch_81_82_b.sql|xref_width
+91	\N	patch	patch_81_82_c.sql|seq_synonym_key
+92	\N	patch	patch_82_83_a.sql|schema_version
+93	\N	patch	patch_83_84_a.sql|schema_version
+94	\N	patch	patch_83_84_b.sql|xref.version_default
+95	\N	patch	patch_83_84_c.sql|protein_feature_unique
+96	\N	patch	patch_83_84_d.sql|longer_synonym
+1	\N	schema_type	core
+2	\N	schema_version	84
+8	1	assembly.accession	GCA_000292705.1
+10	1	assembly.date	2012-08
+7	1	assembly.default	GCA_000292705.1
+11	1	assembly.description	Bacillus thuringiensis HD-789 Genome sequencing
+45	1	assembly.mapping	chromosome:GCA_000292705.1#contig
+44	1	assembly.mapping	plasmid:GCA_000292705.1#contig
+17	1	assembly.master_accession	CP003763
+9	1	assembly.name	ASM29270v1
+56	1	exonbuild.level	toplevel
+53	1	genebuild.hash	6538e11c93c6a472265adaf11a8ad2ce
+14	1	genebuild.initial_release_date	2012-08-EnsemblBacteria
+15	1	genebuild.last_geneset_update	2012-08
+54	1	genebuild.level	toplevel
+16	1	genebuild.method	Generated from ENA annotation
+13	1	genebuild.start_date	2012-08-EnsemblBacteria
+12	1	genebuild.version	2012-08-EnsemblBacteria
+61	1	patch	patch_73_74_b.sql|remove_dnac
+42	1	provider.name	European Nucleotide Archive
+43	1	provider.url	http://www.ebi.ac.uk/ena/data/view/GCA_000292705
+18	1	repeat.analysis	Dust
+19	1	repeat.analysis	TRF
+48	1	sample.gene_param	BTF1_30792
+49	1	sample.gene_text	BTF1_30792
+46	1	sample.location_param	p02:80287-81642
+47	1	sample.location_text	p02:80287-81642
+52	1	sample.search_text	synthetase
+50	1	sample.transcript_param	AFQ30259
+51	1	sample.transcript_text	BTF1_30792-1
+5	1	schema.load_started	2013-07-16 13:02:46
+6	1	schema.load_started	2013-07-16 13:02:53
+57	1	simple_featurebuild.level	toplevel
+37	1	species.alias	Bacillus thuringiensis HD-789
+38	1	species.alias	bacillus_thuringiensis
+24	1	species.classification	Bacillaceae
+25	1	species.classification	Bacillales
+26	1	species.classification	Bacilli
+23	1	species.classification	Bacillus
+22	1	species.classification	Bacillus cereus group
+21	1	species.classification	Bacillus thuringiensis
+20	1	species.classification	Bacillus thuringiensis HD-789
+28	1	species.classification	Bacteria
+29	1	species.classification	cellular organisms
+27	1	species.classification	Firmicutes
+34	1	species.common_name	Bacillus thuringiensis HD-789
+39	1	species.db_name	bacillus_thuringiensis
+33	1	species.display_name	Bacillus thuringiensis HD-789
+41	1	species.division	EnsemblBacteria
+36	1	species.ensembl_alias_name	Bacillus thuringiensis HD-789
+30	1	species.production_name	bacillus_thuringiensis
+32	1	species.scientific_name	Bacillus thuringiensis HD-789
+35	1	species.short_name	Bacillus thuringiensis HD-789
+40	1	species.taxonomy_id	1217737
+31	1	species.url	Bacillus_thuringiensis
+55	1	transcriptbuild.level	toplevel
