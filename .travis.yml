@@ -6,6 +6,9 @@ perl:
   - "5.14"
   - "5.10"
 
+services:
+  - mysql
+
 env:
   - COVERALLS=false DB=mysql
   - COVERALLS=true  DB=mysql
