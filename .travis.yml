@@ -32,11 +32,11 @@ before_install:
 install:
     # install the modules that are part of standard ensembl
     - cpanm -v --installdeps --with-recommends --notest --cpanfile ensembl/cpanfile .
-    # install the modules just used here - could put this into a cpan file
+    # install the modules just used here - could put this into a cpanfile
     - cpanm --notest Perl::Tidy
     - cpanm --notest Test::Code::TidyAll
     - cpanm --notest Devel::Cover::Report::Coveralls
-
+    - cp travisci/MultiTestDB.conf.travisci.mysql  t/MultiTestDB.conf.mysql
 
 script: "./travisci/harness.sh"
 
