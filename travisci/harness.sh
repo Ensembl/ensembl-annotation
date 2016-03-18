@@ -16,6 +16,7 @@ else
 fi
 
 echo "Test list"
+pwd
 ls -l t
 
 echo "COVERALLS value=$COVERALLS"
