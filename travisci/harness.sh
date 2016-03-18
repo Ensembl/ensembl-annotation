@@ -8,13 +8,6 @@ export WORK_DIR=$PWD
 echo "Running test suite"
 echo "Using $PERL5LIB"
 
-if [ "$DB" = 'mysql' ]; then
-    ln -sf t/MultiTestDB.conf.mysql t/MultiTestDB.conf
-else
-    echo "Don't know about DB '$DB'"
-    exit 1;
-fi
-
 echo "Test list"
 pwd
 ls -l t

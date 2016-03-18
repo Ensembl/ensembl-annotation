@@ -36,7 +36,7 @@ install:
     - cpanm --notest Perl::Tidy
     - cpanm --notest Test::Code::TidyAll
     - cpanm --notest Devel::Cover::Report::Coveralls
-    - cp travisci/MultiTestDB.conf.travisci.mysql  t/MultiTestDB.conf.mysql
+    - cp travisci/MultiTestDB.conf.travisci.mysql  t/MultiTestDB.conf
 
 script: "./travisci/harness.sh"
 
