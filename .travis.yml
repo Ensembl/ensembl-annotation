@@ -8,7 +8,7 @@ perl:
 
 env:
   - COVERALLS=false DB=mysql
-  - COVERALLS=true DB=mysql
+  - COVERALLS=true  DB=mysql
 
 sudo: false
 
@@ -25,27 +25,18 @@ before_install:
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-funcgen.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-hive.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-io.git
-    - wget https://github.com/bioperl/bioperl-live/archive/bioperl-release-1-2-3.zip
-    - unzip bioperl-release-1-2-3.zip
-    - git clone --branch bioperl-release-1-6-9 --depth 1 https://github.com/bioperl/bioperl-live.git
-    - git clone --branch master --depth 1 https://github.com/bioperl/bioperl-run.git
-    - wget http://sourceforge.net/projects/samtools/files/samtools/0.1.19/samtools-0.1.19.tar.bz2/download
-    - tar -jxvf download
-    - cd samtools-0.1.19 && make CFLAGS="-g -O2 -fPIC"
-    - cd ..
-    - cpanm --notest Perl::Tidy
-    - cpanm --notest Test::Code::TidyAll
+    - wget http://bioperl.org/DIST/BioPerl-1.6.1.tar.gz
+    - mkdir bioperl-live && tar zxvf BioPerl-1.6.1.tar.gz -C bioperl-live --strip-components 1
 
 
 install:
+    # install the modules that are part of standard ensembl
     - cpanm -v --installdeps --with-recommends --notest --cpanfile ensembl/cpanfile .
-    - cpanm -n Devel::Cover::Report::Coveralls
-    - export SAMTOOLS=$PWD/samtools-0.1.19
-    - export PERL5LIB=$PWD/bioperl-live
-    - cpanm -v --with-recommends --notest Bio::DB::Sam
-    - cpanm -v --with-recommends --notest JSON
-    - unset SAMTOOLS
-    - unset PERL5LIB
+    # install the modules just used here - could put this into a cpan file
+    - cpanm --notest Perl::Tidy
+    - cpanm --notest Test::Code::TidyAll
+    - cpanm --notest Devel::Cover::Report::Coveralls
+
 
 script: "./travisci/harness.sh"
 
