@@ -15,6 +15,9 @@ else
     exit 1;
 fi
 
+echo "Test list"
+ls -l t
+
 echo "COVERALLS value=$COVERALLS"
 
 if [ "$COVERALLS" = 'true' ]; then
