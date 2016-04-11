@@ -1,5 +1,5 @@
 #!/bin/bash
-export PERL5LIB=$PWD/bioperl-live:$PWD/ensembl/modules:$PWD/modules:$PWD/scripts:$PWD/ensembl-compara/modules:$PWD/ensembl-killlist/modules:$PWD/ensembl-hive/modules:$PWD/ensembl-io/modules:$PWD/bioperl-live:$PWD/bioperl-run/lib:$PWD/ensembl-test/modules
+export PERL5LIB=$PWD/bioperl-live:$PWD/ensembl/modules:$PWD/modules:$PWD/scripts:$PWD/ensembl-compara/modules:$PWD/ensembl-killlist/modules:$PWD/ensembl-hive/modules:$PWD/ensembl-io/modules:$PWD/ensembl-test/modules
 
 export TEST_AUTHOR=$USER
 
@@ -8,12 +8,9 @@ export WORK_DIR=$PWD
 echo "Running test suite"
 echo "Using $PERL5LIB"
 
-if [ "$DB" = 'mysql' ]; then
-    ln -sf t/MultiTestDB.conf.mysql t/MultiTestDB.conf
-else
-    echo "Don't know about DB '$DB'"
-    exit 1;
-fi
+echo "Test list"
+pwd
+ls -l t
 
 echo "COVERALLS value=$COVERALLS"
 

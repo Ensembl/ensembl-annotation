@@ -1,0 +1,8 @@
+exon	1	3018
+gene	1	3018
+simple_feature	1	687
+transcript	1	3018
+exon	3	3582
+gene	3	3582
+simple_feature	3	817
+transcript	3	3582
