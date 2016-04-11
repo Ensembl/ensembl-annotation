@@ -28,8 +28,7 @@ before_install:
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-funcgen.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-hive.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-io.git
-    - wget https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.6.1.tar.gz
-    - mkdir bioperl-live && tar zxvf BioPerl-1.6.1.tar.gz -C bioperl-live --strip-components 1
+    - git clone -b bioperl-release-1-6-1 --depth 1 https://github.com/bioperl/bioperl-live.git
 
 
 install:
