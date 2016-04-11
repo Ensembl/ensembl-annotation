@@ -18,3 +18,13 @@ use warnings;
 use Test::More;
 use Bio::EnsEMBL::Test::MultiTestDB;
 use Bio::EnsEMBL::Test::RunPipeline;
+
+#run the pipeline - this will change once we have real code in place
+my $module = 'Bio::EnsEMBL::Production::Pipeline::PipeConfig::Core_handover_conf';
+my $pipeline = Bio::EnsEMBL::Test::RunPipeline->new($module, $options);
+$pipeline->run();
+
+#test the database
+
+
+#dump and run other tests?
